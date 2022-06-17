@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mavenwebapp
+  labels:
+    app: mavenwebapp1
+  namespace: hussain
+spec:
+  containers:
+  - name: mavenwebapp
+    image: naresh06092020/maven-web-application:1
+    ports:
+    - containerPort: 8080   
